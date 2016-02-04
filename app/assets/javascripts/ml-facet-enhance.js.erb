@@ -1,0 +1,20 @@
+sizes = { "A1" : "29mm", "A2" : "25mm", "A3" : "12.5mm", "E5" : "22mm" };
+$(document).ready(
+    function() {
+        $(".limitsMenu").each(function() {
+            if ($(this).find(".side_bar_heading").text().indexOf("Torchbearer Image") > -1) {
+                $(this).find("div.side_bar_content span.facet_value a").each(function()  {
+                    $(this).addClass("torchbearer-link");
+                    code = $(this).text();
+                    size = code in sizes ? sizes[code] : "";
+                    $(this).append('<span class="torchbearer-tooltip"><img src="<%= asset_path("torchbearer/image.png").chomp("image.png") %>' + $(this).text() + '.png" /><br />' + size + '</span>');
+                });
+            } else if ($(this).find(".side_bar_heading").text().indexOf("Publishers Note") > -1) {
+                $(this).find("div.side_bar_content span.facet_value a").each(function()  {
+                    $(this).addClass("publishersnote-link");
+                    code = $(this).text();
+                    $(this).append('<span class="publishersnote-tooltip"><img src="<%= asset_path("publisher/image.png").chomp("image.png") %>' + $(this).text() + '.png" /></span>');
+                });
+            }
+        });
+    });

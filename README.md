@@ -29,8 +29,8 @@ Or install it yourself as:
 
 Simpley add the following to the facets partial:
 
-    $ <%= javascript_include_tag 'torchbearer-images' %>
-    $ <%= stylesheet_link_tag 'torchbearer-images' %>
+    $ <%= javascript_include_tag 'ml-facet-enhance' %>
+    $ <%= stylesheet_link_tag 'ml-facet-enhance' %>
     
 Note: this code is dependent on the specific versions of jquery as well as the specific class assignment for elements 
 in the facet display in order to work.

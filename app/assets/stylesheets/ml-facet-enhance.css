@@ -1,0 +1,39 @@
+.torchbearer-link {
+    position: relative;
+}
+
+.torchbearer-link span {
+    margin-left: -999em;
+    position: absolute;
+    color: #000000;
+}
+
+.torchbearer-link:hover span {
+    border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    position: absolute; left: 1em; top: 2em; z-index: 99;
+    margin-left: 0;
+    padding: 0.5em 0.8em 0.8em 2em;
+    background: #ffffff;
+    border: 1px solid #202020;
+}
+
+.publishersnote-link {
+    position: relative;
+}
+
+.publishersnote-link span {
+    margin-left: -999em;
+    position: absolute;
+    color: #000000;
+}
+
+.publishersnote-link:hover span {
+    border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    position: absolute; left: 1em; top: 2em; z-index: 99;
+    margin-left: 0;
+    padding: 0.5em 0.8em 0.8em 2em;
+    background: #ffffff;
+    border: 1px solid #202020;
+}
